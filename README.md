@@ -49,7 +49,7 @@ later merged in bigQuery SQL and used to create fact and dimension tables for th
 
 ## Exploratory Data Analysis (EDA)
 
-![Executive Summary](./Retail Visuals.png)
+![Executive Summary](Retail Visuals.png)
 
 The was a total of 22.6 Million Pounds in sales for the company across the entire sales data. 
 There were around 5,000 total customers to the company from 2009 to 2011, with an average order 
