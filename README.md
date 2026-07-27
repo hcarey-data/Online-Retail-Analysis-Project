@@ -49,6 +49,8 @@ later merged in bigQuery SQL and used to create fact and dimension tables for th
 
 ## Exploratory Data Analysis (EDA)
 
+![Executive Summary](./Retail Visuals.png)
+
 The was a total of 22.6 Million Pounds in sales for the company across the entire sales data. 
 There were around 5,000 total customers to the company from 2009 to 2011, with an average order 
 value of 21.48 pounds. The United Kingdom itself serves as the main country providing the most 
@@ -82,6 +84,8 @@ target active customers as well as reach out to underperforming ones. Since the 
 top performing country, the company should focus its business operations there. However, it 
 may be of use to target lower performing countries like Canada and the United States to generate 
 more sales there as well. 
+
+
 
 
 
