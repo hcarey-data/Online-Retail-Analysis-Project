@@ -51,7 +51,7 @@ later merged in bigQuery SQL and used to create fact and dimension tables for th
 
 ![Executive Summary](./Retail_Visuals.png)
 
-The was a total of 22.6 Million Pounds in sales for the company across the entire sales data. 
+There was a total of 22.6 million pounds in sales for the company across the entire sales data. 
 There were around 5,000 total customers to the company from 2009 to 2011, with an average order 
 value of 21.48 pounds. The United Kingdom itself serves as the main country providing the most 
 revenue. Seasonality performance was the best from December of 2010 to January of 2011 as well 
