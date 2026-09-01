@@ -49,7 +49,7 @@ later merged in bigQuery SQL and used to create fact and dimension tables for th
 
 ## Data Limitations 
 
-A significant portion of transactions contained missing Customer IDs and/or product descriptions. Rather than removing these transactions entirely, records were retained for analyses that did not require customer-level identification. Missing Customer IDs were categorized as "Unknown," while missing product descriptions were categorized as "No Description." Customer-level analyses such as RFM segmentation were restricted to transactions with valid Customer IDs to avoid aggregating unrelated transactions under a single unknown customer.
+A significant portion of transactions contained missing Customer IDs and/or product descriptions. Rather than removing these transactions entirely, records were retained for analyses that did not require customer-level identification. Missing Customer IDs were categorized as "Unknown," while missing product descriptions were categorized as "No Description." Customer-level analyses such as RFM segmentation were restricted to transactions with valid Customer IDs to avoid aggregating unrelated transactions under a single unknown customer. 
 
 ## Exploratory Data Analysis (EDA)
 
@@ -58,17 +58,20 @@ A significant portion of transactions contained missing Customer IDs and/or prod
 There was a total of 22.6 million pounds in sales for the company across the entire sales data. 
 There were around 5,000 total customers to the company from 2009 to 2011, with an average order 
 value of 21.48 pounds. The United Kingdom itself serves as the main country providing the most 
-revenue. Seasonality performance was the best from December of 2010 to January of 2011 as well 
+revenue. In BigQuery, a monthly seasonality index was calculated by comparing monthly revenue 
+against the average monthly revenue for the corresponding period.
+Seasonality performance was the best from December of 2010 to January of 2011 as well 
 as around December of 2011.
 
 ## Key Insights
 
-According to the pareto analysis, 20 percent of the customer base in the data contribute 85 percent of the total sales. 
+Also in BigQuery, a pareto analysis was conducted to see the effects of the high value customer base. 
+According to this analysis, 20 percent of the customer base in the data contribute 85 percent of the total sales. 
 From the seasonality indices, November and December appear to be the best performing months 
 out of the different years because the monthly sales exceed the average monthly sales and overall average sales. 
 The fourth quarter of the different years have the most sale activity as well. The recency, frequency, 
 and monetary rating scores tell much about the different customers in the dataset. 
-Year-over-Year (YoY) growth and Month-over-month (MoM) growth show high volatility 
+Year-over-Year (YoY) growth and Month-over-month (MoM) growth in BigQuery show high volatility 
 between the different months and years. 
 
 ## Recommendations
