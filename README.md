@@ -59,11 +59,10 @@ as around December of 2011.
 
 ## Key Insights
 
-According to the pareto analysis, 20% of the customer base in the data contribute 0.85 
-percent of the total sales. From the seasonality indices, November and December 
-appear to be the best performing months out of the different years because the monthly 
-sales exceed the average monthly sales and overall average sales. The fourth quarter
-of the different years have the most sale activity as well. The recency, frequency, 
+According to the pareto analysis, 20 percent of the customer base in the data contribute 85 percent of the total sales. 
+From the seasonality indices, November and December appear to be the best performing months 
+out of the different years because the monthly sales exceed the average monthly sales and overall average sales. 
+The fourth quarter of the different years have the most sale activity as well. The recency, frequency, 
 and monetary rating scores tell much about the different customers in the dataset. 
 Year-over-Year (YoY) growth and Month-over-month (MoM) growth show high volatility 
 between the different months and years. 
