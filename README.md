@@ -1,4 +1,4 @@
-# Online Retail Analysis Project (link: https://archive.ics.uci.edu/dataset/502/online+retail+ii)
+# Online Retail Analysis Project (link: https://www.kaggle.com/datasets/dvaser/online-retail-ii)
 
 ## Business Question
 
