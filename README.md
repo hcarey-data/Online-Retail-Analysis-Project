@@ -47,6 +47,10 @@ Price is the unit price per product. Customer ID refers to the specific customer
 bought the product, and Country is the customer's country of origin. These tables are 
 later merged in bigQuery SQL and used to create fact and dimension tables for the PowerBI visualizations.
 
+## Data Limitations 
+
+A significant portion of transactions contained missing Customer IDs and/or product descriptions. Rather than removing these transactions entirely, records were retained for analyses that did not require customer-level identification. Missing Customer IDs were categorized as "Unknown," while missing product descriptions were categorized as "No Description." Customer-level analyses such as RFM segmentation were restricted to transactions with valid Customer IDs to avoid aggregating unrelated transactions under a single unknown customer.
+
 ## Exploratory Data Analysis (EDA)
 
 ![Executive Summary](./Retail_Visuals.png)
