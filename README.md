@@ -80,10 +80,7 @@ Since that 20% of the customer base contributes a large percentage of the total 
 the company should focus on these individuals to drive up revenue. They should spend more 
 on advertising campaigns to increase the longevity of these customers. It should prioritize 
 retention strategies for high-value customers, such as targeted promotions, loyalty programs, 
-and personalized marketing campaigns According to the top-five most popular products, 'Manual' 
-and 'Regency Cake Stand Tier 3' were amongst those listed. 
-The company should prioritize these products and feature them foremost in their advertising 
-strategies to increase revenue. The RFM Analysis Sheet shows a table visualization of the 
+and personalized marketing campaigns. The RFM Analysis Sheet shows a table visualization of the 
 different types of customers based on their RFM score. The customer id slicer can be used 
 to view a customer or group of customers and their rating. Stakeholders may use this to 
 target active customers as well as reach out to underperforming ones. Since the UK is the 
