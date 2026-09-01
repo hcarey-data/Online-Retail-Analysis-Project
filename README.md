@@ -5,8 +5,8 @@
 This project works with customer sales data from the years 2009 to 2011 for 
 a company that operates in the United Kingdom but has transactions in other countries as well. 
 The stakeholders and management have approached with a business question to help increase sales 
-and understand the performance of the company more clearly. How can the company increase revenue 
-and improve profitability by understanding customer behavior, product performance, regional trends,
+and understand the performance of the company more clearly. How can the company increase sales 
+performance by understanding customer behavior, product performance, regional trends,
 and operational inefficiencies? To answer these questions, revenue assessment, RFM analysis of customer 
 behavior, product performance, seasonality, and geographical assessments were all taken into account. 
 
