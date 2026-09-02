@@ -1,5 +1,4 @@
-# Online Retail Analysis Project (original dataset link: https://www.kaggle.com/datasets/dvaser/online-retail-ii)
-(cleaned dataset link: https://www.kaggle.com/datasets/henrycarey/online-retail-ii-cleaned)
+# Online Retail Analysis Project 
 
 ## Business Question
 
@@ -11,7 +10,7 @@ performance by understanding customer behavior, product performance, regional tr
 and operational inefficiencies? To answer these questions, revenue assessment, (Recency, Frequency, and Monetary) 
 RFM analysis of customer behavior, product performance, seasonality, and geographical assessments were all taken into account. 
 
-Specifically, this analysis answers: 
+## Analytical Questions
 	- Revenue Performance
 		How is revenue changing over time?
 		What years/months generate the most sales?
@@ -29,7 +28,10 @@ Specifically, this analysis answers:
 	- Geographic/Regional Analysis
 		Which countries/regions generate the most revenue?
 		Are there underperforming markets with potential?
-		
+
+## Dataset 
+	This dataset was retrieved from https://www.kaggle.com/datasets/dvaser/online-retail-ii. The cleaned dataset can be found at 
+	https://www.kaggle.com/datasets/henrycarey/online-retail-ii-cleaned
 ##. Tools Used
 - Excel
 - BigQuery SQL
@@ -60,7 +62,9 @@ is doing better (by 50%). Conversely, if it is lower (say 0.8), it is doing wors
 sales trends are significant or just a result of seasonal volatility. Lastly, this query accounts for incomplete years as well. 2009, 
 for example, only has one month of December, this is why the index division is by the number of months instead of a full 12-month year.
 
-
+For the pareto analysis, I needed to find how many customers are contributing a large portion of the revenue, specifically 80% according
+to the pareto rule. Many CTEs in BigQuery are used to calculate a running total of revenue for each customer compared to the total revenue
+across the entire sales set. When finished, the query will return the actual percentage of customers contributing to 80% of revenue.
 
 ## Data Limitations 
 
@@ -70,9 +74,10 @@ A significant portion of transactions contained missing Customer IDs and/or prod
 
 ![Executive Summary](./Retail_Visuals.png)
 
-There was a total of 22.6 million pounds in sales for the company across the entire sales data. 
-There were around 5,000 total customers to the company from 2009 to 2011, with an average order 
-value of 21.48 pounds. The United Kingdom itself serves as the main country providing the most 
+There was a total of 22.6 million pounds in sales revenue for the company across the entire sales data. 
+Revenue in this dataset is measured as quantity * price. There were around 5,000 total customers 
+to the company from 2009 to 2011, with an average order value of 21.48 pounds. 
+The United Kingdom itself serves as the main country providing the most 
 revenue. In BigQuery, a monthly seasonality index was calculated by comparing monthly revenue 
 against the average monthly revenue for the corresponding period.
 Seasonality performance was the best from December of 2010 to January of 2011 as well 
@@ -81,7 +86,8 @@ as around December of 2011.
 ## Key Insights
 
 Also in BigQuery, a pareto analysis was conducted to see the effects of the high value customer base. 
-According to this analysis, 20 percent of the customer base in the data contribute 85 percent of the total sales. 
+According to this analysis, about 85 percent of the customer base in the data contribute 80 percent of the total sales,
+meaning that customer engagement and spending is mostly evenly distributed as opposed to concentrated within a small group.
 From the seasonality indices, November and December appear to be the best performing months 
 out of the different years because the monthly sales exceed the average monthly sales and overall average sales. 
 The fourth quarter of the different years have the most sale activity as well. The recency, frequency, 
@@ -91,8 +97,8 @@ between the different months and years.
 
 ## Recommendations
 
-Since that 20% of the customer base contributes a large percentage of the total sales, 
-the company should focus on these individuals to drive up revenue. They should spend more 
+Since there is an evenly distributed customer base that contributes a large percentage of the total sales, 
+the company should take a uniform approach on these individuals to drive up revenue. They should spend more 
 on advertising campaigns to increase the longevity of these customers. It should prioritize 
 retention strategies for high-value customers, such as targeted promotions, loyalty programs, 
 and personalized marketing campaigns. The RFM Analysis Sheet shows a table visualization of the 
