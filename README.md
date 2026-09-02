@@ -72,7 +72,7 @@ A significant portion of transactions contained missing Customer IDs and/or prod
 
 ## Exploratory Data Analysis (EDA)
 
-![Executive Summary](./Retail_Executive_Summary.png)
+![Executive Summary](./Retail_Executive_Summary .png)
 
 There was a total of 22.6 million pounds in sales revenue for the company across the entire sales data. 
 Revenue in this dataset is measured as quantity * price. There were around 5,000 total customers 
