@@ -7,8 +7,8 @@ a company that operates in the United Kingdom but has transactions in other coun
 The stakeholders and management have approached with a business question to help increase sales 
 and understand the performance of the company more clearly. How can the company increase sales 
 performance by understanding customer behavior, product performance, regional trends,
-and operational inefficiencies? To answer these questions, revenue assessment, RFM analysis of customer 
-behavior, product performance, seasonality, and geographical assessments were all taken into account. 
+and operational inefficiencies? To answer these questions, revenue assessment, (Recency, Frequency, and Monetary) 
+RFM analysis of customer behavior, product performance, seasonality, and geographical assessments were all taken into account. 
 
 Specifically, this analysis answers: 
 	- Revenue Performance
@@ -45,7 +45,12 @@ includes Quantity, which is the amount of the product in each transaction, Invoi
 and InvoiceTime, which show the date and time the transaction was made, respectively. 
 Price is the unit price per product. Customer ID refers to the specific customer that 
 bought the product, and Country is the customer's country of origin. These tables are 
-later merged in bigQuery SQL and used to create fact and dimension tables for the PowerBI visualizations.
+later merged in BigQuery SQL and used to create fact and dimension tables for the PowerBI visualizations.
+
+For RFM analysis, recency measures how long ago their purchase was, frequency measures the amount of purchases made
+by each customer over their tenure in the dataset, and monetary represents the total amount of money the customer has
+given to the company. In BigQuery SQL, several common table expressions (CTEs) are linked to develop RFM scores based on 
+these metrics to determine how truly valuable a customer is to the company. 
 
 ## Data Limitations 
 
