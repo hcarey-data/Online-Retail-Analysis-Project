@@ -84,9 +84,13 @@ and personalized marketing campaigns. The RFM Analysis Sheet shows a table visua
 different types of customers based on their RFM score. The customer id slicer can be used 
 to view a customer or group of customers and their rating. Stakeholders may use this to 
 target active customers as well as reach out to underperforming ones. Since the UK is the 
-top performing country, the company should focus its business operations there. However, it 
-may be of use to target lower performing countries like Canada and the United States to generate 
-more sales there as well. 
+top performing country, the company should focus its business operations there. It is also helpful to 
+suggest contrasting AOV and growth along with revenue generated per country. For example, Germany, 
+with 100 customers has a high amount of customers compared with other countries other than the UK. 
+However, it's average order value (AOV) is on the lower end of the spectrum. The same can be said for France at 92 customers. 
+The UK has overwhelmingly both high AOV, customer count, and total revenue. 
+Combine this with the highest growth occurring in 2010, it is clear that this 
+country is and should still be the focal point of market sales.
 
 
 
