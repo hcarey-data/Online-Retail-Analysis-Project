@@ -1,4 +1,5 @@
-# Online Retail Analysis Project (link: https://www.kaggle.com/datasets/dvaser/online-retail-ii)
+# Online Retail Analysis Project (original dataset link: https://www.kaggle.com/datasets/dvaser/online-retail-ii)
+(cleaned dataset link: https://www.kaggle.com/datasets/henrycarey/online-retail-ii-cleaned)
 
 ## Business Question
 
