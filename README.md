@@ -53,6 +53,15 @@ by each customer over their tenure in the dataset, and monetary represents the t
 given to the company. In BigQuery SQL, several common table expressions (CTEs) are linked to develop RFM scores based on 
 these metrics to determine how truly valuable a customer is to the company. 
 
+For seasonality index analysis, the SQL queries also use CTEs to calculate the monthly revenue for each year over that year's 
+average. This yields the seasonality index, which is a decimal measure representing the performance of that month compared to the
+yearly average. If the index is equal to one, the monthly revenue is on par with the yearly average. If it is greater (say 1.5), it 
+is doing better (by 50%). Conversely, if it is lower (say 0.8), it is doing worse (by 20%). This can yield useful results to test if
+sales trends are significant or just a result of seasonal volatility. Lastly, this query accounts for incomplete years as well. 2009, 
+for example, only has one month of December, this is why the index division is by the number of months instead of a full 12-month year.
+
+
+
 ## Data Limitations 
 
 A significant portion of transactions contained missing Customer IDs and/or product descriptions. Rather than removing these transactions entirely, records were retained for analyses that did not require customer-level identification. Missing Customer IDs were categorized as "Unknown," while missing product descriptions were categorized as "No Description." Customer-level analyses such as RFM segmentation were restricted to transactions with valid Customer IDs to avoid aggregating unrelated transactions under a single unknown customer. 
