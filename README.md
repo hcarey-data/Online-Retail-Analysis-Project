@@ -72,8 +72,6 @@ A significant portion of transactions contained missing Customer IDs and/or prod
 
 ## Exploratory Data Analysis (EDA)
 
-![Executive Summary](./Retail_Executive_Summary.png)
-
 There was a total of 22.6 million pounds in sales revenue for the company across the entire sales data. 
 Revenue in this dataset is measured as quantity * price. There were around 5,000 total customers 
 to the company from 2009 to 2011, with an average order value of 21.48 pounds. 
@@ -82,6 +80,14 @@ revenue. In BigQuery, a monthly seasonality index was calculated by comparing mo
 against the average monthly revenue for the corresponding period.
 Seasonality performance was the best from December of 2010 to January of 2011 as well 
 as around December of 2011.
+
+![Executive Summary](./Retail_Executive_Summary.png)
+
+![RFM Analysis](./Retail_RFM_Analysis.png)
+
+![Seasonality Index Analysis](./Retail_Seasonality_Index.png)
+
+![Geographical Analysis](./Retail_Geographic_Analysis.png)
 
 ## Key Insights
 
