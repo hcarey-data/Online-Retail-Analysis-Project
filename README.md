@@ -87,7 +87,7 @@ as around December of 2011.
 
 ![Seasonality Index Analysis](./Retail_Seasonality_Index.png)
 
-![Geographical Analysis](./Retail_Geographic_Analysis.png)
+![Geographical Analysis](./Retail_Geographical_Analysis.png)
 
 ## Key Insights
 
